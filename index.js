@@ -1,3 +1,20 @@
+/*
+1. Create another animal module, based off of dog.js
+2. require() it into index.js
+3. Call greet() using your new animal module function.
+*/
+// Callback examples 
+const bark = require('./dog');
+const greet = require("./greet");
+greet(bark);
+// const woof = bark();
+// greet(woof);
+
+
+
+// =======================================
+// Module examples
+
 // 0. Grab specific sound using .<keyname>
 // const catSound = require("./cat");
 // console.log(catSound.cat);
@@ -19,9 +36,9 @@
 
 
 // 2. "Destructuring" - "pluck a specific value out of an object"
-const {cat, kitten} = require("./cat");
-console.log(cat);
-console.log(kitten);
+// const {cat, kitten} = require("./cat");
+// console.log(cat);
+// console.log(kitten);
 // When would I destructure?
 // When you want one to three individual values.
 // If you want a lot more, just bring in the whole object.
