@@ -4,9 +4,32 @@
 3. Call greet() using your new animal module function.
 */
 // Callback examples 
-const bark = require('./dog');
+const hoo = require("./owl");
+const bark = require("./dog");
 const greet = require("./greet");
-greet(bark);
+// greet(bark, "Tony");
+// greet(hoo, "Jonathan");
+
+function helloWorld() {
+    console.log("3. hello world");
+}
+
+// setTimeout and setInterval are Ticketmaster.
+// setTimeout - you pass it a function, it waits, then it calls it
+// setInterval - you pass it a function, it waits, calls it, waits, calls it
+console.log("1. about to call setTimeout");
+// setInterval(helloWorld, 1000);
+// setInterval(function () {
+//     console.log("3. hello world");
+// }, 1000);
+setInterval(() => {
+    console.log("3. hello world");
+}, 1000);
+console.log("2. you called setTimeout");
+
+// helloWorld();
+
+
 // const woof = bark();
 // greet(woof);
 
